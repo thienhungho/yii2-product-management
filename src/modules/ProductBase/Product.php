@@ -38,8 +38,8 @@ class Product extends BaseProduct
 	    [
             [['title', 'slug', 'description', 'content'], 'required'],
             [['description', 'content'], 'string'],
-            [['author', 'quantity', 'product_parent', 'assign_with', 'created_by', 'updated_by'], 'integer'],
-            [['promotional_price', 'price'], 'number'],
+            [['author', 'product_parent', 'assign_with', 'created_by', 'updated_by'], 'integer'],
+            [['promotional_price', 'price', 'quantity'], 'number'],
             [['created_at', 'updated_at', 'gallery'], 'safe'],
             [['title', 'slug', 'feature_img', 'sku', 'status', 'unit', 'currency_unit', 'product_type', 'language'], 'string', 'max' => 255],
             [['comment_status', 'rating_status'], 'string', 'max' => 25],

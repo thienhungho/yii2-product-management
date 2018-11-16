@@ -21,7 +21,7 @@ class m181111_100101_product extends \yii\db\Migration
             'author'            => $this->integer(19),
             'feature_img'       => $this->string(255),
             'sku'               => $this->string(255),
-            'quantity'          => $this->integer(19)->defaultValue(-1),
+            'quantity'          => $this->float()->defaultValue(-1),
             'status'            => $this->string(255)->defaultValue('Public'),
             'comment_status'    => $this->string(25)->defaultValue('Open'),
             'rating_status'     => $this->string(25)->defaultValue('Open'),
