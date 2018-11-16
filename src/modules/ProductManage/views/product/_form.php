@@ -140,7 +140,7 @@ use yii\helpers\Html;
             'addon' => ['prepend' => ['content' => '<span class="fa fa-user"></span>']],
         ])->widget(\kartik\widgets\Select2::classname(), [
             'data'          => \yii\helpers\ArrayHelper::map(
-                \common\models\User::find()
+                \thienhungho\UserManagement\models\User::find()
                     ->select([
                         'id',
                         'username',

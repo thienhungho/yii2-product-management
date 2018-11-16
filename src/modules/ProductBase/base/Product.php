@@ -2,9 +2,9 @@
 
 namespace thienhungho\ProductManagement\modules\ProductBase\base;
 
-use thienhungho\ProductManagement\modules\CartBase\Cart;
-use thienhungho\ProductManagement\modules\OrderBase\OrderItem;
-use common\models\User;
+use thienhungho\Cart\models\Cart;
+use thienhungho\OrderManagement\models\OrderItem;
+use thienhungho\UserManagement\models\User;
 use Yii;
 use yii\behaviors\TimestampBehavior;
 

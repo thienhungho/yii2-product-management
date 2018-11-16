@@ -85,7 +85,7 @@ $this->registerJs($search);
                 'attribute' => 'feature_img',
                 'value'     => function($model, $key, $index, $column) {
                     return Html::a(
-                        '<img style="max-width: 50px;" src=/' . \common\modules\media\Media::getOtherSizePath('thumbnail', $model->feature_img) . '>',
+                        '<img style="max-width: 50px;" src=/' . get_other_img_size_path('thumbnail', $model->feature_img) . '>',
                         \yii\helpers\Url::to(['/../../' . $model->product_type . '/' . $model->slug . '.html']), [
                         'data-pjax' => '0',
                         'target'    => '_blank',
@@ -152,7 +152,7 @@ $this->registerJs($search);
             //                    }
             //                },
             //                'filterType'          => GridView::FILTER_SELECT2,
-            //                'filter'              => \yii\helpers\ArrayHelper::map(\common\models\User::find()->asArray()->all(), 'id', 'username'),
+            //                'filter'              => \yii\helpers\ArrayHelper::map(\thienhungho\UserManagement\models\User::find()->asArray()->all(), 'id', 'username'),
             //                'filterWidgetOptions' => [
             //                    'pluginOptions' => ['allowClear' => true],
             //                ],
