@@ -163,10 +163,15 @@ use yii\helpers\Html;
 
         <?= $form->field($model, 'quantity', [
             'addon' => ['prepend' => ['content' => '<span class="fa fa-cart-plus"></span>']],
-        ])->textInput([
-            'maxlength'   => true,
-            'placeholder' => t('app', 'Quantity'),
-            'type'        => 'number',
+        ])->widget(\kartik\number\NumberControl::classname(), [
+            'value'              => 1000,
+            'maskedInputOptions' => [
+                'prefix' => ' ',
+                'suffix' => ' ',
+                'digits' => 2,
+            ],
+            'displayOptions'     => ['class' => 'form-control kv-monospace'],
+            'saveInputContainer' => ['class' => 'kv-saved-cont'],
         ]) ?>
 
         <?= $form->field($model, 'unit', [
@@ -188,10 +193,15 @@ use yii\helpers\Html;
 
         <?= $form->field($model, 'smallest_unit', [
             'addon' => ['prepend' => ['content' => '<span class="fa fa-cart-plus"></span>']],
-        ])->textInput([
-            'maxlength'   => true,
-            'placeholder' => t('app', 'Smallest Unit'),
-            'type'        => 'number',
+        ])->widget(\kartik\number\NumberControl::classname(), [
+            'value'              => 1000,
+            'maskedInputOptions' => [
+                'prefix' => ' ',
+                'suffix' => ' ',
+                'digits' => 2,
+            ],
+            'displayOptions'     => ['class' => 'form-control kv-monospace'],
+            'saveInputContainer' => ['class' => 'kv-saved-cont'],
         ]) ?>
 
         <?= $form->field($model, 'price', [
