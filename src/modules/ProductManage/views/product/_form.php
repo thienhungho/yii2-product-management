@@ -186,6 +186,14 @@ use yii\helpers\Html;
             ],
         ]); ?>
 
+        <?= $form->field($model, 'smallest_unit', [
+            'addon' => ['prepend' => ['content' => '<span class="fa fa-cart-plus"></span>']],
+        ])->textInput([
+            'maxlength'   => true,
+            'placeholder' => t('app', 'Smallest Unit'),
+            'type'        => 'number',
+        ]) ?>
+
         <?= $form->field($model, 'price', [
             'addon' => ['prepend' => ['content' => '<span class="fa fa-money"></span>']],
         ])->widget(\kartik\number\NumberControl::classname(), [

@@ -37,6 +37,7 @@ use kartik\grid\GridView;
         'promotional_price',
         'price',
         'unit',
+        'smallest_unit',
         'gallery:ntext',
         'product_parent',
         'product_type',

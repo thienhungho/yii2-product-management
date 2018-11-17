@@ -39,7 +39,7 @@ class Product extends BaseProduct
             [['title', 'slug', 'description', 'content'], 'required'],
             [['description', 'content'], 'string'],
             [['author', 'product_parent', 'assign_with', 'created_by', 'updated_by'], 'integer'],
-            [['promotional_price', 'price', 'quantity'], 'number'],
+            [['promotional_price', 'price', 'quantity', 'smallest_unit'], 'number'],
             [['created_at', 'updated_at', 'gallery'], 'safe'],
             [['title', 'slug', 'feature_img', 'sku', 'status', 'unit', 'currency_unit', 'product_type', 'language'], 'string', 'max' => 255],
             [['comment_status', 'rating_status'], 'string', 'max' => 25],
@@ -57,6 +57,8 @@ class Product extends BaseProduct
             [['product_type'], 'default', 'value' => self::PRODUCT_TYPE_PRODUCT],
             [['unit'], 'default', 'value' => self::UNIT_1_PRODUCT],
             [['currency_unit'], 'default', 'value' => 'USD'],
+            [['quantity'], 'default', 'value' => -1],
+            [['smallest_unit'], 'default', 'value' => 1]
         ]);
     }
 

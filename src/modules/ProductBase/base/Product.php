@@ -67,7 +67,7 @@ class Product extends \yii\db\ActiveRecord
             [['title', 'slug', 'description', 'content'], 'required'],
             [['description', 'content'], 'string'],
             [['author', 'product_parent', 'assign_with', 'created_by', 'updated_by'], 'integer'],
-            [['promotional_price', 'price', 'quantity'], 'number'],
+            [['promotional_price', 'price', 'quantity', 'smallest_unit'], 'number'],
             [['created_at', 'updated_at', 'gallery'], 'safe'],
             [['title', 'slug', 'feature_img', 'sku', 'status', 'unit', 'currency_unit', 'product_type', 'language'], 'string', 'max' => 255],
             [['comment_status', 'rating_status'], 'string', 'max' => 25],
@@ -110,6 +110,7 @@ class Product extends \yii\db\ActiveRecord
             'product_type' => Yii::t('app', 'Product Type'),
             'language' => Yii::t('app', 'Language'),
             'assign_with' => Yii::t('app', 'Assign With'),
+            'smallest_unit' => Yii::t('app', 'Smallest Unit'),
         ];
     }
     

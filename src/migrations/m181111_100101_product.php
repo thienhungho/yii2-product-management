@@ -28,6 +28,7 @@ class m181111_100101_product extends \yii\db\Migration
             'promotional_price' => $this->float(),
             'price'             => $this->float(),
             'unit'              => $this->string(255)->defaultValue('1 product'),
+            'smallest_unit'     => $this->float()->defaultValue(1),
             'currency_unit'     => $this->string(255)->notNull()->defaultValue('USD'),
             'gallery'           => $this->text(),
             'product_parent'    => $this->integer(19),
