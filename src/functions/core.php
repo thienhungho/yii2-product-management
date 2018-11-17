@@ -24,6 +24,18 @@ function is_product_type_slug($slug)
 }
 
 /**
+ * @param $slug
+ *
+ * @return mixed
+ */
+function get_product_type_by_slug($slug)
+{
+    return \thienhungho\ProductManagement\models\ProductType::find()
+        ->where(['slug' => $slug])
+        ->one();
+}
+
+/**
  * @param $product_type
  * @param $id
  */
