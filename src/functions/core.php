@@ -6,7 +6,7 @@
  */
 function is_product_type_name($name)
 {
-    return \thienhungho\ProductManagement\models\Product::find()
+    return \thienhungho\ProductManagement\models\ProductType::find()
         ->where(['name' => $name])
         ->exists();
 }
