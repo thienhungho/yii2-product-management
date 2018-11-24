@@ -7,7 +7,7 @@ namespace thienhungho\ProductManagement\modules\ProductBase\query;
  *
  * @see ProductType
  */
-class ProductTypeQuery extends \yii\db\ActiveQuery
+class ProductTypeQuery extends \thienhungho\ActiveQuery\models\ActiveQuery
 {
     /*public function active()
     {

@@ -7,7 +7,7 @@ namespace thienhungho\ProductManagement\modules\ProductBase\query;
  *
  * @see \thienhungho\ProductManagement\modules\ProductBase\query\ProductUnitEquivalent
  */
-class ProductUnitEquivalentQuery extends \yii\db\ActiveQuery
+class ProductUnitEquivalentQuery extends \thienhungho\ActiveQuery\models\ActiveQuery
 {
     /*public function active()
     {

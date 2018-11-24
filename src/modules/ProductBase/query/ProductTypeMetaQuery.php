@@ -7,7 +7,7 @@ namespace thienhungho\ProductManagement\modules\ProductBase\query;
  *
  * @see ProductTypeMeta
  */
-class ProductTypeMetaQuery extends \yii\db\ActiveQuery
+class ProductTypeMetaQuery extends \thienhungho\ActiveQuery\models\ActiveQuery
 {
     /*public function active()
     {
