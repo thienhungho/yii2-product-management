@@ -6,7 +6,7 @@
 
 use yii\helpers\Html;
 use kartik\export\ExportMenu;
-use kartik\grid\GridView;
+use thienhungho\Widgets\models\GridView;
 
 $type = request()->get('type', 'product');
 $this->title = t('app', 'Term of') . ' ' . t('app', ucfirst($type));

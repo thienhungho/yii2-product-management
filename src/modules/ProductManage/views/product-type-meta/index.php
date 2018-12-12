@@ -6,7 +6,7 @@
 
 use yii\helpers\Html;
 use kartik\export\ExportMenu;
-use kartik\grid\GridView;
+use thienhungho\Widgets\models\GridView;
 
 $this->title = t('app', 'Meta of product type: ') . ucfirst(request()->get('type'));
 $this->params['breadcrumbs'][] = $this->title;

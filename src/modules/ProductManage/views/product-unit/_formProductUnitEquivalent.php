@@ -1,6 +1,6 @@
 <div class="form-group" id="add-product-unit-equivalent">
 <?php
-use kartik\grid\GridView;
+use thienhungho\Widgets\models\GridView;
 use kartik\builder\TabularForm;
 use yii\data\ArrayDataProvider;
 use yii\helpers\Html;
