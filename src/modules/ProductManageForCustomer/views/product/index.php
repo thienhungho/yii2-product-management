@@ -231,10 +231,7 @@ $this->registerJs($search);
                     'name'    => 'action',
                     'value'   => '',
                     'data'    => [
-                        ACTION_DELETE  => t('app', 'Delete'),
-                        STATUS_DRAFT   => t('app', slug_to_text(STATUS_DRAFT)),
-                        STATUS_PENDING => t('app', slug_to_text(STATUS_PENDING)),
-                        STATUS_PUBLIC  => t('app', slug_to_text(STATUS_PUBLIC)),
+
                     ],
                     'theme'   => \kartik\widgets\Select2::THEME_BOOTSTRAP,
                     'options' => [
