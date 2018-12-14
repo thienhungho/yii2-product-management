@@ -71,7 +71,7 @@ Add module ProductManage to your `AppConfig` file.
 Modules
 ------------
 
-[ProductBase](https://github.com/thienhungho/yii2-product-management/tree/master/src/modules/ProductBase), [ProductManage](https://github.com/thienhungho/yii2-product-management/tree/master/src/modules/ProductManage)
+[ProductBase](https://github.com/thienhungho/yii2-product-management/tree/master/src/modules/ProductBase), [ProductManage](https://github.com/thienhungho/yii2-product-management/tree/master/src/modules/ProductManage), [ProductManageForCustomer](https://github.com/thienhungho/yii2-product-management/tree/master/src/modules/ProductManageForCustomer)
 
 Functions
 ------------
