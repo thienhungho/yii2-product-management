@@ -166,8 +166,8 @@ use yii\helpers\Html;
         ])->widget(\kartik\number\NumberControl::classname(), [
             'value'              => 1000,
             'maskedInputOptions' => [
-                'prefix' => ' ',
-                'suffix' => ' ',
+                'prefix' => '',
+                'suffix' => '',
                 'digits' => 2,
             ],
             'displayOptions'     => ['class' => 'form-control kv-monospace'],
@@ -196,8 +196,8 @@ use yii\helpers\Html;
         ])->widget(\kartik\number\NumberControl::classname(), [
             'value'              => 1000,
             'maskedInputOptions' => [
-                'prefix' => ' ',
-                'suffix' => ' ',
+                'prefix' => '',
+                'suffix' => '',
                 'digits' => 2,
             ],
             'displayOptions'     => ['class' => 'form-control kv-monospace'],
@@ -209,8 +209,8 @@ use yii\helpers\Html;
         ])->widget(\kartik\number\NumberControl::classname(), [
             'value'              => 1000,
             'maskedInputOptions' => [
-                'prefix' => ' ',
-                'suffix' => ' ',
+                'prefix' => '',
+                'suffix' => '',
                 'digits' => 2,
             ],
             'displayOptions'     => ['class' => 'form-control kv-monospace'],
@@ -223,8 +223,8 @@ use yii\helpers\Html;
             'name'               => 'amount_rounded_1',
             'value'              => 1000,
             'maskedInputOptions' => [
-                'prefix' => ' ',
-                'suffix' => ' ',
+                'prefix' => '',
+                'suffix' => '',
                 'digits' => 2,
             ],
             'displayOptions'     => ['class' => 'form-control kv-monospace'],

@@ -80,7 +80,7 @@ $this->registerJs($search);
                 'visible'   => false,
             ],
             [
-                'class'     => \yii\grid\DataColumn::className(),
+                'class'     => \kartik\grid\DataColumn::className(),
                 'format'    => 'raw',
                 'attribute' => 'feature_img',
                 'value'     => function($model, $key, $index, $column) {
@@ -91,9 +91,10 @@ $this->registerJs($search);
                         'target'    => '_blank',
                     ]);
                 },
+                'vAlign'    => GridView::ALIGN_MIDDLE,
             ],
             [
-                'class'         => \yii\grid\DataColumn::className(),
+                'class'         => \kartik\grid\DataColumn::className(),
                 'format'        => 'raw',
                 'attribute'     => 'title',
                 'value'         => function($model, $key, $index, $column) {
@@ -103,13 +104,15 @@ $this->registerJs($search);
                     ]);
                 },
                 'headerOptions' => ['style' => 'min-width:220px;'],
+                'vAlign'        => GridView::ALIGN_MIDDLE,
             ],
             [
                 'attribute'     => 'sku',
                 'headerOptions' => ['style' => 'min-width:100px;'],
+                'vAlign'        => GridView::ALIGN_MIDDLE,
             ],
             [
-                'class'     => \yii\grid\DataColumn::className(),
+                'class'     => \kartik\grid\DataColumn::className(),
                 'format'    => 'raw',
                 'attribute' => 'quantity',
                 'value'     => function($model, $key, $index, $column) {
@@ -121,24 +124,27 @@ $this->registerJs($search);
 
                     return span_label('warning', $model->quantity . ' ( ' . $model->unit . ' ) ');
                 },
+                'vAlign'    => GridView::ALIGN_MIDDLE,
             ],
             [
-                'class'         => \yii\grid\DataColumn::className(),
+                'class'         => \kartik\grid\DataColumn::className(),
                 'format'        => 'raw',
                 'attribute'     => 'price',
                 'value'         => function($model, $key, $index, $column) {
                     return format_product_price($model->price) . ' ' . span_label('warning', $model->currency_unit);
                 },
                 'headerOptions' => ['style' => 'min-width:140px;'],
+                'vAlign'        => GridView::ALIGN_MIDDLE,
             ],
             [
-                'class'         => \yii\grid\DataColumn::className(),
+                'class'         => \kartik\grid\DataColumn::className(),
                 'format'        => 'raw',
                 'attribute'     => 'promotional_price',
                 'value'         => function($model, $key, $index, $column) {
                     return format_product_price($model->promotional_price) . ' ' . span_label('warning', $model->currency_unit);
                 },
                 'headerOptions' => ['style' => 'min-width:140px;'],
+                'vAlign'        => GridView::ALIGN_MIDDLE,
             ],
             //            'unit',
             //            [
@@ -195,6 +201,7 @@ $this->registerJs($search);
                     'placeholder' => Yii::t('app', 'Status'),
                     'id'          => 'grid-search-status',
                 ],
+                'vAlign'        => GridView::ALIGN_MIDDLE,
             ],
         ];
         ?>
