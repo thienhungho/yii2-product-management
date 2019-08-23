@@ -65,7 +65,7 @@ function get_product_type_url($type)
 {
     return url([
         '/product/product/index',
-        'type' => $type,
+        'slug' => $type,
     ]);
 }
 
@@ -85,12 +85,12 @@ function format_product_price($price)
  *
  * @return string
  */
-function get_product_url($product_type, $slug)
+function get_product_url($product_type_slug, $product_slug)
 {
     return url([
         '/product/product/view',
-        'type' => $product_type,
-        'slug' => $slug,
+        'product_type_slug' => $product_type_slug,
+        'product_slug' => $product_slug,
     ]);
 }
 
@@ -119,11 +119,12 @@ function get_product_term_url($product_type, $term_type, $slug)
  *
  * @return array|\BaseApp\ecommerce\modules\ProductBase\Product[]
  */
-function get_all_product($type, $limit = -1, $data_type = DATA_TYPE_ARRAY, $orderBy = ['id' => SORT_DESC])
+function get_all_product($type, $limit = -1, $offset = 0, $data_type = DATA_TYPE_ARRAY, $orderBy = ['id' => SORT_DESC])
 {
     return \thienhungho\ProductManagement\models\Product::find()
         ->where(['product_type' => $type])
         ->orderBy($orderBy)
+        ->offset($offset)
         ->limit($limit)
         ->type($type)
         ->dataType($data_type)

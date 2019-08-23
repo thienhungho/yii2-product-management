@@ -106,6 +106,7 @@ class ProductController extends Controller
         $model->id = 0;
         $model->product_type = $slug;
         if ($model->loadAll(request()->post())) {
+            $model->gallery = json_encode($model->gallery);
             if ($model->saveAll()) {
                 set_flash_has_been_saved();
                 create_all_term_relationships_of_all_term_type_of_product_type($model->product_type, $model->primaryKey);
@@ -141,6 +142,7 @@ class ProductController extends Controller
             $model = $this->findModel($id);
         }
         if ($model->loadAll(request()->post())) {
+            $model->gallery = json_encode($model->gallery);
             if ($model->saveAll()) {
                 set_flash_has_been_saved();
                 create_all_term_relationships_of_all_term_type_of_product_type($model->product_type, $model->primaryKey);
@@ -180,6 +182,7 @@ class ProductController extends Controller
             $model = $this->findModel($id);
         }
         if ($model->loadAll(request()->post())) {
+            $model->gallery = json_encode($model->gallery);
             if ($model->saveAll()) {
                 set_flash_has_been_saved();
                 create_all_term_relationships_of_all_term_type_of_product_type($model->product_type, $model->primaryKey);
@@ -314,6 +317,7 @@ class ProductController extends Controller
             $model = $this->findModel($id);
         }
         if ($model->loadAll(request()->post())) {
+            $model->gallery = json_encode($model->gallery);
             if ($model->saveAll()) {
                 set_flash_has_been_saved();
                 create_all_term_relationships_of_all_term_type_of_product_type($model->product_type, $model->primaryKey);
